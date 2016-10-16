@@ -1,0 +1,35 @@
+#
+#
+# fait le 06-01-13 par jna
+# modifié le 16-10-16
+# fichier: ipt-NQ
+#
+#
+# =================================================  NAT  =======================================================
+#
+
+*nat
+:PREROUTING ACCEPT
+:POSTROUTING ACCEPT
+:OUTPUT ACCEPT
+
+COMMIT
+#
+# === FIN NAT ===
+# ================================================== FILTER =====================================================
+*filter
+:INPUT ACCEPT
+:FORWARD ACCEPT
+:OUTPUT ACCEPT
+
+COMMIT
+# === FIN FILTER ===
+# =========================================================== FIN DES TABLES ====================================
+#
+#
+# ====== EXEMPLES ========= EXEMPLES ========= EXEMPLES ========= EXEMPLES ========= EXEMPLES ========= EXEMPLES
+
+
+
+
+
